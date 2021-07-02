@@ -28,7 +28,13 @@ pipeline {
                 steps {
                  echo 'This will run only if successful'  
          }  
-     }  
+     } 
+     post {
+     always {
+     //
+}
+success {
+}
 }
 
  }
