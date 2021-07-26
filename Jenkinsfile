@@ -1,9 +1,6 @@
 pipeline {
     agent any
-
- 
-
-    stages {
+stages {
         stage('working directory clean') {
             steps {
                 cleanWs()
@@ -19,10 +16,7 @@ pipeline {
         stage('zipfile') {
             steps {
                 zip dir: '', exclude: '', glob: '', zipFile: 'HRIS_TDDs'
-
- 
-
-            }
+             }
         }
             stage('Post Job') {  
                 steps {
