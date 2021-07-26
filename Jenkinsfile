@@ -30,7 +30,8 @@ stages {
 success {
 }
 }
+}
+}
 
- }
 
  
