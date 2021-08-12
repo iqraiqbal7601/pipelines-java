@@ -7,13 +7,13 @@ trigger:
 - master
 
 pool:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
+- #task: ArchiveFiles@2
+  #inputs:
+   # rootFolderOrFile: '$(Build.BinariesDirectory)'
+    #includeRootFolder: true
+    #archiveType: 'zip'
+    #archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    #replaceExistingArchive: true
   vmImage: ubuntu-latest
 
 steps:
